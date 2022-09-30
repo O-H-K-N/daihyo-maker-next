@@ -1,6 +1,6 @@
-import { AppProps } from 'next/app'
-import Head from 'next/head'
-import { createGlobalStyle } from 'styled-components'
+import { AppProps } from "next/app";
+import Head from "next/head";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -23,7 +23,7 @@ a {
 ol, ul {
   list-style: none;
 }
-`
+`;
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
@@ -41,7 +41,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <GlobalStyle />
       <Component {...pageProps} />
     </>
-  )
-}
+  );
+};
 
-export default MyApp
+export default MyApp;
